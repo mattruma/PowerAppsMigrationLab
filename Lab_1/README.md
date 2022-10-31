@@ -19,7 +19,7 @@ Might take several minutes for the components to all show up.
 
 Turn the flow `on`.
 
-**Export** the solution.
+**Export** the solution as a `Managed Solution`.
 
 **Import** the solution into another environment, other than `Working`.
 
