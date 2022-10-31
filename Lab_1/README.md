@@ -25,4 +25,4 @@ Turn the flow `on`.
 
 **Import** the solution into another environment, other than `Working`.
 
-Run the app.
+**Run** the `Migrate - Lab 1 - Canvas App` Canvas App in the new environment, just to make sure the import was succesful.
