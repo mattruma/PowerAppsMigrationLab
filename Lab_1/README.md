@@ -10,6 +10,8 @@ In the `Lab 1` folder import the package `Package.zip` into your `Working` envir
 
 Might take several minutes for the components to all show up.
 
+**Run** the `Migrate - Lab 1 - Canvas App` Canvas App, just to make sure the import was succesful.
+
 **Create** a solution, name it `Migrate - Lab 1 Solution`.
 
 **Add** the following components to the solution:
