@@ -1,0 +1,359 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Migrate - Lab 3 - Connector 1",
+    "description": "",
+    "version": "1.0"
+  },
+  "host": "swapi.dev",
+  "basePath": "/api",
+  "schemes": [
+    "https"
+  ],
+  "consumes": [],
+  "produces": [],
+  "paths": {
+    "/people": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "count": {
+                  "type": "integer",
+                  "format": "int32",
+                  "description": "count"
+                },
+                "next": {
+                  "type": "string",
+                  "description": "next"
+                },
+                "previous": {
+                  "type": "string",
+                  "description": "previous"
+                },
+                "results": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "name": {
+                        "type": "string",
+                        "description": "name"
+                      },
+                      "height": {
+                        "type": "string",
+                        "description": "height"
+                      },
+                      "mass": {
+                        "type": "string",
+                        "description": "mass"
+                      },
+                      "hair_color": {
+                        "type": "string",
+                        "description": "hair_color"
+                      },
+                      "skin_color": {
+                        "type": "string",
+                        "description": "skin_color"
+                      },
+                      "eye_color": {
+                        "type": "string",
+                        "description": "eye_color"
+                      },
+                      "birth_year": {
+                        "type": "string",
+                        "description": "birth_year"
+                      },
+                      "gender": {
+                        "type": "string",
+                        "description": "gender"
+                      },
+                      "homeworld": {
+                        "type": "string",
+                        "description": "homeworld"
+                      },
+                      "films": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        },
+                        "description": "films"
+                      },
+                      "species": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        },
+                        "description": "species"
+                      },
+                      "vehicles": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        },
+                        "description": "vehicles"
+                      },
+                      "starships": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        },
+                        "description": "starships"
+                      },
+                      "created": {
+                        "type": "string",
+                        "description": "created"
+                      },
+                      "edited": {
+                        "type": "string",
+                        "description": "edited"
+                      },
+                      "url": {
+                        "type": "string",
+                        "description": "url"
+                      }
+                    }
+                  },
+                  "description": "results"
+                }
+              }
+            }
+          }
+        },
+        "summary": "People List",
+        "operationId": "People-List",
+        "parameters": [
+          {
+            "name": "page",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "search",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          }
+        ]
+      }
+    },
+    "/people/{id}": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "description": "name"
+                },
+                "height": {
+                  "type": "string",
+                  "description": "height"
+                },
+                "mass": {
+                  "type": "string",
+                  "description": "mass"
+                },
+                "hair_color": {
+                  "type": "string",
+                  "description": "hair_color"
+                },
+                "skin_color": {
+                  "type": "string",
+                  "description": "skin_color"
+                },
+                "eye_color": {
+                  "type": "string",
+                  "description": "eye_color"
+                },
+                "birth_year": {
+                  "type": "string",
+                  "description": "birth_year"
+                },
+                "gender": {
+                  "type": "string",
+                  "description": "gender"
+                },
+                "homeworld": {
+                  "type": "string",
+                  "description": "homeworld"
+                },
+                "films": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "films"
+                },
+                "species": {
+                  "type": "array",
+                  "items": {},
+                  "description": "species"
+                },
+                "vehicles": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "vehicles"
+                },
+                "starships": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "starships"
+                },
+                "created": {
+                  "type": "string",
+                  "description": "created"
+                },
+                "edited": {
+                  "type": "string",
+                  "description": "edited"
+                },
+                "url": {
+                  "type": "string",
+                  "description": "url"
+                }
+              }
+            }
+          }
+        },
+        "summary": "People Get",
+        "operationId": "People-Get",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ]
+      }
+    },
+    "/planets": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "count": {
+                  "type": "integer",
+                  "format": "int32",
+                  "description": "count"
+                },
+                "next": {
+                  "type": "string",
+                  "description": "next"
+                },
+                "previous": {
+                  "type": "string",
+                  "description": "previous"
+                },
+                "results": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "name": {
+                        "type": "string",
+                        "description": "name"
+                      },
+                      "rotation_period": {
+                        "type": "string",
+                        "description": "rotation_period"
+                      },
+                      "orbital_period": {
+                        "type": "string",
+                        "description": "orbital_period"
+                      },
+                      "diameter": {
+                        "type": "string",
+                        "description": "diameter"
+                      },
+                      "climate": {
+                        "type": "string",
+                        "description": "climate"
+                      },
+                      "gravity": {
+                        "type": "string",
+                        "description": "gravity"
+                      },
+                      "terrain": {
+                        "type": "string",
+                        "description": "terrain"
+                      },
+                      "surface_water": {
+                        "type": "string",
+                        "description": "surface_water"
+                      },
+                      "population": {
+                        "type": "string",
+                        "description": "population"
+                      },
+                      "residents": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        },
+                        "description": "residents"
+                      },
+                      "films": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        },
+                        "description": "films"
+                      },
+                      "created": {
+                        "type": "string",
+                        "description": "created"
+                      },
+                      "edited": {
+                        "type": "string",
+                        "description": "edited"
+                      },
+                      "url": {
+                        "type": "string",
+                        "description": "url"
+                      }
+                    }
+                  },
+                  "description": "results"
+                }
+              }
+            }
+          }
+        },
+        "summary": "Planet List",
+        "operationId": "Planet-List",
+        "parameters": [
+          {
+            "name": "page",
+            "in": "query",
+            "required": false,
+            "type": "integer",
+            "default": 1,
+            "format": "int32"
+          }
+        ]
+      }
+    }
+  },
+  "definitions": {},
+  "parameters": {},
+  "responses": {},
+  "securityDefinitions": {},
+  "security": [],
+  "tags": []
+}
